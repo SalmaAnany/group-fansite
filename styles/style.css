@@ -4,11 +4,15 @@ body{
     color: #333;
 }
 
-heater, footer {
-    background-color: #ffcc00;
+header, footer {
+    background-color: #ffa200fc;
     border: 2px;
     padding: 20px;
     text-align: center;
+}
+
+li {
+    display: inline;
 }
 
 main {
