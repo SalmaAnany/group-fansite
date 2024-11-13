@@ -1,11 +1,21 @@
+:root {
+
+    /* CSS HEX */
+--silver: #a5a19d;
+--silver-2: #C6C0B6ff;
+--chocolate-cosmos: #5B1C1Dff;
+--field-drab: #65512Cff;
+--white-smoke: #F3F3F3ff;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--white-smoke);
     color: #333;
 }
 
 header, footer {
-    background-color: #ffa200fc;
+    background-color:var(--field-drab);
     border: 2px;
     padding: 20px;
     text-align: center;
@@ -22,21 +32,21 @@ main {
 }
 
 h1 {
-    color: #ff6b6b;
+    color: var(--white-smoke);
 }
 
 h2 {
-    color: #007bff;
+    color: var(--chocolate-cosmos);
 }
 
 nav a {
-    color: #333;
+    color: var(--silver-2);
     text-decoration: none;
     padding: 5px;
   }
   
 nav a:hover {
-    color: #ff6b6b;
+    color: var(--chocolate-cosmos);
 }
 
 ul {
