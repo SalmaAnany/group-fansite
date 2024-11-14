@@ -4,8 +4,41 @@
     align-items: center;     
 }
 
-.gallery img {
+article {
     width: 300px;
     height: auto;
     margin: 10px;
+}
+
+.carousel-track {
+    overflow: hidden;
+    position: relative;
+    box-shadow: none;
+    height: 175px;
+    width: 100%;
+}
+
+.carousel-items-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    gap: 5%;
+    width: 200%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    animation: slide 35s linear infinite;
+}
+
+.carousel-items-container:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+0% {
+    left: 0;
+}
+100% {
+    left: -100%;
+}
 }
