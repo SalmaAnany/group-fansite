@@ -1,18 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+
+    font-size: 16px;
+    /* CSS HEX */
+    --silver: #a5a19d;
+    --silver-2: #C6C0B6ff;
+    --chocolate-cosmos: #5B1C1Dff;
+    --field-drab: #65512Cff;
+    --white-smoke: #F3F3F3ff;
+    
+}
+
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.caudex-regular {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--white-smoke);
     color: #333;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr .5fr;
+
 }
 
 header, footer {
-    background-color: #ffa200fc;
-    border: 2px;
+    background-color:var(--field-drab);
     padding: 20px;
     text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+
+nav {
+    border: 2px solid var(--silver-2);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+
 li {
     display: inline;
+    list-style: none;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 1.2em;
 }
 
 main {
@@ -22,36 +98,42 @@ main {
 }
 
 h1 {
-    color: #ff6b6b;
+    color: var(--white-smoke);
 }
 
 h2 {
-    color: #007bff;
+    color: var(--chocolate-cosmos);
 }
 
-nav a {
-    color: #333;
+a {
+    color: var(--white-smoke);
     text-decoration: none;
     padding: 5px;
-  }
-  
-nav a:hover {
-    color: #ff6b6b;
+}
+
+a:hover {
+    color: var(--chocolate-cosmos);
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.gallery {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: space-around;
 }
 
-.gallery img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
+footer a {
+    font-size: 1.2em;
+}
+
+footer p {
+    color: var(--silver-2);
 }
