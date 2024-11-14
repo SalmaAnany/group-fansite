@@ -10,9 +10,9 @@
 
 
 main {
-    margin: 0px;
+    margin: 10px 0px;
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     background-image: url(../assets/foods-images/food_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
