@@ -8,6 +8,13 @@
 --white-smoke: #F3F3F3ff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--white-smoke);
@@ -39,12 +46,12 @@ h2 {
     color: var(--chocolate-cosmos);
 }
 
-nav a {
+a {
     color: var(--silver-2);
     text-decoration: none;
     padding: 5px;
-  }
-  
+}
+
 nav a:hover {
     color: var(--chocolate-cosmos);
 }
@@ -64,4 +71,10 @@ ul {
     width: 300px;
     height: auto;
     margin: 10px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
