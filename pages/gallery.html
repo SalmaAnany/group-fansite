@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Some photos about our favorite meals</h1>
+      <h1 class="tangerine-bold">Some photos about our favorite meals</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -21,36 +21,52 @@
     </header>
     <main>
       <section>
-        <h2>Enjoy these foods pictures!</h2>
-        <div class="gallery">
-          <article class="portrait">
-            <img
-            src="../assets/foods-images/cranberry-chicken-2023-3.jpg"
-            alt="Food 1"/>
-            <p>This cranberry chicken recipe brings festive flair with vibrant cranberries and golden-brown chicken, making it a stunning centerpiece for holiday gatherings—yet easy enough for a weeknight dinner. 
-              Quickly searing the chicken for crispy skin adds a bit of time but makes a flavorful difference. Layered with carrots, celery, and a savory mix of garlic, lemon, rosemary, and paprika, this dish practically cooks itself in the oven. 
-              The cranberries soak up the delicious drippings, creating a rich sauce perfect for serving with crusty bread or rosemary focaccia.</p>
-          </article>
-          
-          <article class="portrait">
-            <img
-            src="../assets/foods-images/blacken-fish.jpeg"
-            alt="Food 1"/>
-            <p>TBlackened fish is a flavorful dish where fish fillets are coated with a blend of spices, typically including paprika, cayenne, garlic powder, thyme, and oregano, then seared at high heat. 
-              The intense heat creates a dark, crispy crust that’s packed with smoky, spicy flavors, while keeping the fish tender and juicy inside. 
-              Originally popularized in Cajun and Creole cuisine, blackened fish is known for its bold, savory taste and is often served with sides like rice, vegetables, or a refreshing citrus slaw.</p>
-          </article>
+        <h2 id="h2-gallery">Enjoy these foods pictures!</h2>
+        <div class="slider">
+          <input type="radio" name="slide" id="slide1" checked>
+          <input type="radio" name="slide" id="slide2">
+          <input type="radio" name="slide" id="slide3">
 
-          <article class="landscape">
-            <img
-            src="/assets/foods-images/pho.jpg"
-            alt="Food 1"/>
-            <p>A great pho soup begins with a rich, flavorful beef broth infused with charred aromatics, a touch of sugar, and the umami depth of fish sauce. 
-              The key to authentic pho lies in these charred spices and aromatics, which create the distinct taste that sets pho apart from regular beef noodle soup. 
-              While traditional pho is made with bones, using a cheap cut of meat, like rib finger meat, can achieve an incredible depth of flavor and texture. 
-              This cut offers the perfect balance of connective tissue, fat, and meat, adding richness to the broth and ensuring nothing goes to waste when the soup is done.</p>
-          </article>
-        
+          <div class="slides">
+            <div class="slide">
+              <article class="portrait">
+                <img
+                src="../assets/foods-images/cranberry-chicken-2023-3.jpg"
+                alt="Food 1"/>
+                <p>This cranberry chicken recipe brings festive flair with vibrant cranberries and golden-brown chicken, making it a stunning centerpiece for holiday gatherings—yet easy enough for a weeknight dinner. 
+                  Quickly searing the chicken for crispy skin adds a bit of time but makes a flavorful difference. Layered with carrots, celery, and a savory mix of garlic, lemon, rosemary, and paprika, this dish practically cooks itself in the oven. 
+                  The cranberries soak up the delicious drippings, creating a rich sauce perfect for serving with crusty bread or rosemary focaccia.</p>
+              </article>
+            </div>
+            
+            <div class="slide">
+              <article class="portrait">
+                <img
+                src="../assets/foods-images/blacken-fish.jpeg"
+                alt="Food 1"/>
+                <p>TBlackened fish is a flavorful dish where fish fillets are coated with a blend of spices, typically including paprika, cayenne, garlic powder, thyme, and oregano, then seared at high heat. 
+                  The intense heat creates a dark, crispy crust that’s packed with smoky, spicy flavors, while keeping the fish tender and juicy inside. 
+                  Originally popularized in Cajun and Creole cuisine, blackened fish is known for its bold, savory taste and is often served with sides like rice, vegetables, or a refreshing citrus slaw.</p>
+              </article>
+            </div>
+            <div class="slide">
+              <article class="landscape">
+                <img
+                src="/assets/foods-images/pho.jpg"
+                alt="Food 1"/>
+                <p>A great pho soup begins with a rich, flavorful beef broth infused with charred aromatics, a touch of sugar, and the umami depth of fish sauce. 
+                  The key to authentic pho lies in these charred spices and aromatics. 
+                  While traditional pho is made with bones, using a cheap cut of meat, like rib finger meat, can achieve an incredible depth of flavor and texture.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>  
+
         </div>
       </section>
     </main>

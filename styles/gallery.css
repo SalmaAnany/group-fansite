@@ -1,25 +1,121 @@
-.gallery {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
+:root {
+
+    font-size: 16px;
+    /* CSS HEX */
+    --silver: #a5a19d;
+    --silver-2: #C6C0B6ff;
+    --chocolate-cosmos: #5B1C1Dff;
+    --field-drab: #65512Cff;
+    --white-smoke: #F3F3F3ff;
+    
 }
 
-.gallery img {
-    width: 300px;
-    height: auto;
-    margin: 10px;
+#h2-gallery {
+    color: var(--chocolate-cosmos);
+    font-size: 32px;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%; 
+    height: 100vh;
+    padding: 50px 50px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+    height: 100%; 
+}
+
+
+.slide {
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 .portrait {
-    width: 500px;
-    height: 300px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.portrait img {
+    width: 45%;
+    height: 30%;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.portrait p {
+    font-size: 25px;
+    color: var(--chocolate-cosmos); 
+    width: 35%;
+    margin: 50px;
 }
 
 .landscape {
-    width: 500px;
-    height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.landscape img {
+    width: 65%;
+    height: 45%;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.landscape p {
+    font-size: 25px;
+    color: var(--chocolate-cosmos); 
+    width: 35%;
+    margin: 50px;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--silver);
+    margin: 0 5px;
+    cursor: text;
+    transition: background-color 0.3s;
+}
+
+/* Sliding effect */
+input#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+input#slide2:checked ~ .slides {
+    transform: translateX(-35%);
+}
+
+input#slide3:checked ~ .slides {
+    transform: translateX(-65%);
+}
+
+input#slide1:checked ~ .navigation label[for="slide1"],
+input#slide2:checked ~ .navigation label[for="slide2"],
+input#slide3:checked ~ .navigation label[for="slide3"] {
+    background-color: #333;
 }
