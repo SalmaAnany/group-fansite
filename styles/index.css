@@ -7,10 +7,11 @@
 --field-drab: #65512Cff;
 --white-smoke: #F3F3F3ff;
 }
-
+.content {
+    justify-self: center;
+}
 
 main {
-    margin: 10px 0px;
     width: 100%;
     height: 65vh;
     background-image: url(../assets/foods-images/food_3.jpg);
