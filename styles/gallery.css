@@ -9,7 +9,12 @@
     --white-smoke: #F3F3F3ff;
     
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .slider {
     position: relative;
     max-width: 100%; 
