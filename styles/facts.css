@@ -34,8 +34,6 @@
     width: auto;
     height: auto;
     display: grid;
-    flex-direction:row;
-    flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-template-rows: repeat(3, 1fr);
