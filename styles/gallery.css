@@ -46,6 +46,18 @@ main{
     color: var(--chocolate-cosmos);
 }
 
+.slide-link:focus{
+    background-color: var(--silver-2);
+}
+
+.tool-tip {
+
+}
+
+.tool-tip-text {
+
+}
+
 .slide-wrap{
     width: 100%;
     height: 100%;
