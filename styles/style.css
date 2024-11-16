@@ -11,10 +11,10 @@
     --chocolate-cosmos: #5B1C1Dff;
     --field-drab: #65512Cff;
     --white-smoke: #F3F3F3ff;
-    
+
 }
 
-*{
+* {
     /* border: 1px dotted blue; */
 }
 
@@ -52,7 +52,7 @@ h1 {
 }
 
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--white-smoke);
     color: #333;
@@ -62,8 +62,9 @@ body{
 
 }
 
-header, footer {
-    background-color:var(--field-drab);
+header,
+footer {
+    background-color: var(--field-drab);
     padding: 20px;
     text-align: center;
 }
@@ -97,10 +98,11 @@ nav a {
 
 main {
     background-color: white;
-    /* background-color: pink; */
     width: 100%;
     padding: 20px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    justify-self: center;
+    align-self: center;
 }
 
 h1 {
