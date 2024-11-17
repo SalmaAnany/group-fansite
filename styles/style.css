@@ -71,8 +71,14 @@ footer {
 
 header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-text-content{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: centerq;
 }
 
 h1 {
