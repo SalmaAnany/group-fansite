@@ -69,22 +69,38 @@ footer {
     text-align: center;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 h1 {
     font-size: 3rem;
 }
 
 
 nav {
-    border: 2px solid var(--silver-2);
+    /* border: 2px solid var(--silver-2); */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     padding: 10px;
 }
 
 nav ul {
+    height: 25px;
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.floral-nav-divider {
+    width: 20git%;
+    height: auto;
+}
 
 li {
     display: inline;
@@ -144,4 +160,8 @@ footer a {
 
 footer p {
     color: var(--silver-2);
+}
+
+[href="https://www.flaticon.com/free-icons/divider"]{
+    font-size: .5em;
 }
