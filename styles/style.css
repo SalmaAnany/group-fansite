@@ -73,12 +73,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 150px;
 }
 
-.header-text-content{
+.header-text-content {
     display: flex;
     flex-direction: column;
-    justify-content: centerq;
+    justify-content: center;
 }
 
 h1 {
@@ -171,6 +172,6 @@ footer p {
     color: var(--silver-2);
 }
 
-[href="https://www.flaticon.com/free-icons/divider"]{
+[href="https://www.flaticon.com/free-icons/divider"] {
     font-size: .5em;
 }
